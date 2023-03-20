@@ -10,7 +10,7 @@
   <script src="https://kit.fontawesome.com/d633f21f4a.js" crossorigin="anonymous"></script>
   <!-- google fonts (Roboto)  -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="icon" type="magia" href="images/web.png">
+  <link rel="icon" type="magia" href="images/magia.png">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap"
@@ -26,9 +26,8 @@
 <body class="first-letter:font-roboto bg-dark-bg" style="scroll-behavior: smooth;">
   <!-- start header  -->
   <header class="text-white flex items-center justify-center h-[84px]">
-    <div class="container flex items-center justify-between">
-      <div class="logo z-[10000]"><img class="wow bounceInLeft logo "
-        src="images/magia.png" alt="logo"></div>
+    <div id="logo" class="container flex items-center justify-between">
+      <div class="logo z-[10000]"><img class="wow bounceInLeft logo " src="images/magia.png" alt="logo"></div>
       <div class="menu-icon flex md:hidden">
         <span></span>
         <span></span>
@@ -37,16 +36,22 @@
       <nav class="hidden w-2/3 md:flex items-center justify-end">
         <ul class="bounceInRight flex justify-between items-center gap-5">
           <li>
-            <a class="wow fadeInUpBig capitalize hover:text-blue-500 transition-all duration-300" href="index.html">home</a>
+            <input class="wow bounceInRight change_color" type="color">
           </li>
           <li>
-            <a class="wow fadeInUpBig ccapitalize hover:text-blue-500 transition-all duration-300" href="#">team</a>
+            <a class="wow fadeInUpBig capitalize hover:text-blue-500 transition-all duration-300"
+              href="#home">home</a>
           </li>
           <li>
-            <a class="wow fadeInUpBig ccapitalize hover:text-blue-500 transition-all duration-300" href="#">portfolio</a>
+            <a class="wow fadeInUpBig capitalize hover:text-blue-500 transition-all duration-300" href="#our-team">our team</a>
           </li>
           <li>
-            <a class="wow fadeInUpBig ccapitalize hover:text-blue-500 transition-all duration-300" href="#">contact us</a>
+            <a class="wow fadeInUpBig capitalize hover:text-blue-500 transition-all duration-300"
+              href="#projects">our projects</a>
+          </li>
+          <li>
+            <a class="wow fadeInUpBig capitalize hover:text-blue-500 transition-all duration-300" href="#contact-us">contact
+              us</a>
           </li>
         </ul>
       </nav>
@@ -54,7 +59,7 @@
   </header>
   <!-- end header  -->
   <!-- start home page section  -->
-  <section class="home my-10 py-10 text-white w-full h-[100vh] flex items-center justify-center">
+  <section id="home" class="home my-10 py-10 text-white w-full flex items-center justify-center">
     <div class="homeSwiper container flex items-center overflow-hidden w-full">
       <div class="swiper-wrapper w-full flex items-center">
         <div class="w-full swiper-slide">
@@ -66,7 +71,7 @@
                 design
               </h2>
               <p class="text-center md:text-start opacity-70 mb-5">
-                You can now design your personal <strong>Website</strong> or a website for your own company with us              </p>
+                You can now design your personal <strong>Website</strong> or a website for your own company with us </p>
               <a href="#" class="wow slideInLeft main-btn">Contact</a>
             </div>
             <div class="wow slideInRight w-48 md:w-[350px]" class="img-holder">
@@ -154,10 +159,13 @@
     </div>
   </section>
   <!-- end home page section  -->
-  <!-- start portfolio  -->
-  <section class="portfolio py-10 text-white">
+  <!-- start our team  -->
+  <section id="our-team" class="our-team py-10 text-white">
     <div class="homeSwiper container flex flex-col items-center overflow-hidden w-full">
-    <h2 class="main-title relative w-fit mx-auto before:w-full before:h-1 before:absolute before:bg-white before:left-0 before:-bottom-4 mb-10 capitalize text-3xl text-center "><span class="wow bounceInUp text-blue-600">magia</span> team</h2>
+      <h2
+        class="main-title relative w-fit mx-auto before:w-full before:h-1 before:absolute before:bg-white before:left-0 before:-bottom-4 mb-10 capitalize text-3xl text-center ">
+        <span class="wow bounceInUp text-blue-600">magia</span> team
+      </h2>
       <div class="swiper-wrapper w-full flex items-center">
         <div class="w-full swiper-slide">
           <div class="flex flex-col-reverse gap-10 md:flex-row items-center justify-between">
@@ -175,7 +183,7 @@
               <div
                 class="skils w-fit bg-[#8c9295] py-2 px-5 rounded-lg flex gap-5 items-center justify-between flex-col md:flex-row">
                 <span class="capitalize font-light text-lg opacity-100">best skills on:</span>
-                <div class="w-full md:w-fit flex justify-center items-center gap-2">
+                <div class="w-full md:w-fit flex justify-center items-center gap-2 flex-wrap">
                   <img class="w-8 hover:scale-125 hover:rounded-full duration-300 transition-all"
                     src="images/skills/html.png" alt="" />
                   <img class="w-8 hover:scale-125 hover:rounded-full duration-300 transition-all"
@@ -203,7 +211,7 @@
                 front end developer
               </h2>
               <p class="opacity-75 leading-relaxed text-xs w-full md:w-3/4 md:text-sm">
-                Hi, I'm [Hamdy-Maohamed], age 19-year-old web programmer based
+                Hi, I'm [Hamdy-Maohamed] <strong>Google stydent</strong> ,age 19-year-old web programmer based
                 in Egypt. With 2 years of experience in web development, I
                 have a solid understanding of front-end programming languages,
                 including HTML, CSS, JavaScript,sass, bootstrap,
@@ -212,7 +220,7 @@
               <div
                 class="skils w-fit bg-[#8c9295] py-2 px-5 rounded-lg flex gap-5 items-center justify-between flex-col md:flex-row">
                 <span class="capitalize font-light text-lg opacity-100">best skills:</span>
-                <div class="w-full md:w-fit flex justify-center items-center gap-2">
+                <div class="w-full md:w-fit flex justify-center items-center gap-2 flex-wrap">
                   <img class="w-8 hover:scale-125 hover:rounded-full duration-300 transition-all"
                     src="images/skills/html.png" alt="" />
                   <img class="w-8 hover:scale-125 hover:rounded-full duration-300 transition-all"
@@ -221,11 +229,11 @@
                     src="images/skills/js.png" alt="" />
                   <img class="w-8 hover:scale-125 hover:rounded-full duration-300 transition-all"
                     src="images/skills/react.png" alt="" />
-                    <img class="w-8 hover:scale-125 hover:rounded-full duration-300 transition-all"
+                  <img class="w-8 hover:scale-125 hover:rounded-full duration-300 transition-all"
                     src="images/skills/bootstrap.png" alt="" />
                   <img class="w-8 hover:scale-125 hover:rounded-full duration-300 transition-all"
                     src="images/skills/tailwind.png" alt="" />
-                    <img class="w-8 hover:scale-125 hover:rounded-full duration-300 transition-all"
+                  <img class="w-8 hover:scale-125 hover:rounded-full duration-300 transition-all"
                     src="images/skills/sass.png" alt="" />
                 </div>
               </div>
@@ -236,12 +244,13 @@
             </div>
           </div>
         </div>
+        <!-- hessen nasser -->
         <div class="w-full swiper-slide">
           <div class="flex flex-col-reverse gap-10 md:flex-row items-center justify-between">
             <div class="text-holder flex flex-col gap-5 w-2/3 relative">
               <h2 class="text-lg md:text-3xl capitalize font-bold">
                 HI! i'm<br />
-                <span class="text-light-blue">Hussein Nasser</span><br class="hidden md:block" />
+                <span class="text-light-blue">hessen nasser</span><br class="hidden md:block" />
                 Front End Developer
               </h2>
               <p class="opacity-75 leading-relaxed text-xs w-full md:w-3/4 md:text-sm">
@@ -251,7 +260,7 @@
               <div
                 class="skils w-fit bg-[#8c9295] py-2 px-5 rounded-lg flex gap-5 items-center justify-between flex-col md:flex-row">
                 <span class="capitalize font-light text-lg opacity-100">best skills:</span>
-                <div class="w-full md:w-fit flex justify-center items-center gap-2">
+                <div class="w-full md:w-fit flex justify-center items-center gap-2 flex-wrap">
                   <img class="w-8 hover:scale-125 hover:rounded-full duration-300 transition-all"
                     src="images/skills/html.png" alt="" />
                   <img class="w-8 hover:scale-125 hover:rounded-full duration-300 transition-all"
@@ -261,8 +270,8 @@
                   <img class="w-8 hover:scale-125 hover:rounded-full duration-300 transition-all"
                     src="images/skills/bootstrap.png" alt="" />
                   <img class="w-8 hover:scale-125 hover:rounded-full duration-300 transition-all"
-                    src="images/skills/tailwind.png" alt=""/>
-                    <img class="w-8 hover:scale-125 hover:rounded-full duration-300 transition-all"
+                    src="images/skills/tailwind.png" alt="" />
+                  <img class="w-8 hover:scale-125 hover:rounded-full duration-300 transition-all"
                     src="images/skills/react.png" alt="" />
                 </div>
               </div>
@@ -288,7 +297,7 @@
               <div
                 class="skils w-fit bg-[#8c9295] py-2 px-5 rounded-lg flex gap-5 items-center justify-between flex-col md:flex-row">
                 <span class="capitalize font-light text-lg opacity-100">best skills:</span>
-                <div class="w-full md:w-fit flex justify-center items-center gap-2">
+                <div class="w-full md:w-fit flex justify-center items-center gap-2 flex-wrap">
                   <img class="w-8 hover:scale-125 hover:rounded-full duration-300 transition-all"
                     src="images/skills/html.png" alt="" />
                   <img class="w-8 hover:scale-125 hover:rounded-full duration-300 transition-all"
@@ -310,24 +319,23 @@
             </div>
           </div>
         </div>
+        <!-- mahmoud abu el enien -->
         <div class="w-full swiper-slide">
           <div class="flex flex-col-reverse gap-10 md:flex-row items-center justify-between">
             <div class="text-holder flex flex-col gap-5 w-2/3 relative">
               <h2 class="text-lg md:text-3xl capitalize font-bold">
-
-                <!-- mahmoud abu el enien -->
                 HI! i'm<br />
                 <span class="text-light-blue">Mahmoud Abu Al-Enein</span><br class="hidden md:block" />
                 UI/UX Designer
               </h2>
               <p class="opacity-75 leading-relaxed text-xs w-full md:w-3/4 md:text-sm">
                 I am Mahmoud Abo El-enen,I have 1 year experience
-                  a web and application designer responsible for layouts and graphics
+                a web and application designer responsible for layouts and graphics
               </p>
               <div
                 class="skils w-fit bg-[#8c9295] py-2 px-5 rounded-lg flex gap-5 items-center justify-between flex-col md:flex-row">
                 <span class="capitalize font-light text-lg opacity-100">best skills:</span>
-                <div class="w-full md:w-fit flex justify-center items-center gap-2">
+                <div class="w-full md:w-fit flex justify-center items-center gap-2 felx-wrap">
                   <img class="w-8 hover:scale-125 hover:rounded-full duration-300 transition-all"
                     src="images/skills/html.png" alt="" />
                   <img class="w-8 hover:scale-125 hover:rounded-full duration-300 transition-all"
@@ -336,7 +344,7 @@
                     src="images/skills/linephoto.png" alt="" />
                   <img class="w-8 hover:scale-125 hover:rounded-full duration-300 transition-all"
                     src="images/skills/adobe-photoshop.png" alt="" />
-                    <img class="w-8 hover:scale-125 hover:rounded-full duration-300 transition-all"
+                  <img class="w-8 hover:scale-125 hover:rounded-full duration-300 transition-all"
                     src="images/skills/xd.png" alt="" />
                 </div>
               </div>
@@ -347,11 +355,11 @@
             </div>
           </div>
         </div>
+        <!-- mahmoud badwey -->
         <div class="w-full swiper-slide">
           <div class="flex flex-col-reverse gap-10 md:flex-row items-center justify-between">
             <div class="text-holder flex flex-col gap-5 w-2/3 relative">
               <h2 class="text-lg md:text-3xl capitalize font-bold">
-                <!-- mahmoud badwey -->
                 HI! i'm<br />
                 <span class="text-light-blue">Mahmoud Badwey</span><br class="hidden md:block" />
                 Mobile developer
@@ -363,7 +371,7 @@
               <div
                 class="skils w-fit bg-[#8c9295] py-2 px-5 rounded-lg flex gap-5 items-center justify-between flex-col md:flex-row">
                 <span class="capitalize font-light text-lg opacity-100">best skills:</span>
-                <div class="w-full md:w-fit flex justify-center items-center gap-2">
+                <div class="w-full md:w-fit flex justify-center items-center gap-2 flex-wrap">
                   <img class="w-8 hover:scale-125 hover:rounded-full duration-300 transition-all"
                     src="images/skills/html.png" alt="" />
                   <img class="w-8 hover:scale-125 hover:rounded-full duration-300 transition-all"
@@ -372,8 +380,8 @@
                     src="images/skills/dart.png" alt="" />
                   <img class="w-8 hover:scale-125 hover:rounded-full duration-300 transition-all"
                     src="images/skills/java.png" alt="" />
-                    <img class="w-8 hover:scale-125 hover:rounded-full duration-300 transition-all"
-                    src="images/skills/kotlin.png" alt=""/>
+                  <img class="w-8 hover:scale-125 hover:rounded-full duration-300 transition-all"
+                    src="images/skills/kotlin.png" alt="" />
                 </div>
               </div>
             </div>
@@ -383,6 +391,7 @@
             </div>
           </div>
         </div>
+        <!-- Iyad Elsharif -->
         <div class="w-full swiper-slide">
           <div class="flex flex-col-reverse gap-10 md:flex-row items-center justify-between">
             <div class="text-holder flex flex-col gap-5 w-2/3 relative">
@@ -404,7 +413,7 @@
               <div
                 class="skils w-fit bg-[#8c9295] py-2 px-5 rounded-lg flex gap-5 items-center justify-between flex-col md:flex-row">
                 <span class="capitalize font-light text-lg opacity-100">best skills:</span>
-                <div class="w-full md:w-fit flex justify-center items-center gap-2">
+                <div class="w-full md:w-fit flex justify-center items-center gap-2 flex-wrap">
                   <img class="w-8 hover:scale-125 hover:rounded-full duration-300 transition-all"
                     src="images/skills/html.png" alt="" />
                   <img class="w-8 hover:scale-125 hover:rounded-full duration-300 transition-all"
@@ -422,95 +431,91 @@
             </div>
           </div>
         </div>
-        <div class="w-full swiper-slide">
-          <div class="flex flex-col-reverse gap-10 md:flex-row items-center justify-between">
-            <div class="text-holder flex flex-col gap-5 w-2/3 relative">
-            </div>
-          </div>
-        </div>
       </div>
-      <div class="swiper-button-next border-main-blue border-2 p-5 rounded-full"></div>
-      <div class="swiper-button-prev border-main-blue border-2 p-5 rounded-full"></div>
+    </div>
     </div>
   </section>
-  <!-- end portfolio  -->
+  <!-- end our-team  -->
 
   <!-- start projects section  -->
-  <section class="projects py-10 text-white">
+  <section id="projects" class="projects py-10 text-white overflow-hidden">
     <div class="container felx felx-col items-center justify-center">
-      <h2 class="main-title relative w-fit mx-auto before:w-full before:h-1 before:absolute before:bg-white before:left-0 before:-bottom-4 mb-10 capitalize text-3xl text-center text-blue-600"><span class="text-white">our</span> projects</h2>
+      <h2
+        class="main-title relative w-fit mx-auto before:w-full before:h-1 before:absolute before:bg-white before:left-0 before:-bottom-4 mb-10 capitalize text-3xl text-center text-blue-600">
+        <span class="text-white">our</span> projects
+      </h2>
       <div class="content grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10">
-        <div
-          class="wow bounceInLeft project-card relative w-full h-[300px] bg-[#284bdf] rounded-lg overflow-hidden">
+        <div class="wow bounceInLeft project-card relative w-full h-[300px] bg-[#284bdf] rounded-lg overflow-hidden">
           <div class="project-card-img"></div>
           <div class="caption">responsive blog website </div>
-          <div class="details absolute w-full h-full bottom-0 z-[1000] text-white flex flex-col text-center items-center justify-center gap-5 p-5">
+          <div
+            class="details absolute w-full h-full bottom-0 z-[1000] text-white flex flex-col text-center items-center justify-center gap-5 p-5">
             <a href="#" class="main-btn self-center demo-link">demo</a>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quibusdam in blanditiis nam! Minus
               pariatur numquam maiores voluptate aliquam tempora veritatis aperiam ad excepturi tenetur, repudiandae
               neque odio repellat rem.</p>
           </div>
         </div>
-        <div
-          class="wow bounceInUp project-card relative w-full h-[300px] bg-[#284bdf] rounded-lg overflow-hidden">
+        <div class="wow bounceInUp project-card relative w-full h-[300px] bg-[#284bdf] rounded-lg overflow-hidden">
           <div class="project-card-img"></div>
           <div class="caption">responsive blog website </div>
-          <div class="details absolute w-full h-full bottom-0 z-[1000] text-white flex flex-col text-center items-center justify-center gap-5 p-5">
+          <div
+            class="details absolute w-full h-full bottom-0 z-[1000] text-white flex flex-col text-center items-center justify-center gap-5 p-5">
             <a href="#" class="main-btn self-center demo-link">demo</a>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quibusdam in blanditiis nam! Minus
               pariatur numquam maiores voluptate aliquam tempora veritatis aperiam ad excepturi tenetur, repudiandae
               neque odio repellat rem.</p>
           </div>
         </div>
-        <div
-          class="wow bounceInRight project-card relative w-full h-[300px] bg-[#284bdf] rounded-lg overflow-hidden">
+        <div class="wow bounceInRight project-card relative w-full h-[300px] bg-[#284bdf] rounded-lg overflow-hidden">
           <div class="project-card-img"></div>
           <div class="caption">responsive blog website </div>
-          <div class="details absolute w-full h-full bottom-0 z-[1000] text-white flex flex-col text-center items-center justify-center gap-5 p-5">
+          <div
+            class="details absolute w-full h-full bottom-0 z-[1000] text-white flex flex-col text-center items-center justify-center gap-5 p-5">
             <a href="#" class="main-btn self-center demo-link">demo</a>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quibusdam in blanditiis nam! Minus
               pariatur numquam maiores voluptate aliquam tempora veritatis aperiam ad excepturi tenetur, repudiandae
               neque odio repellat rem.</p>
           </div>
         </div>
-        <div
-          class="wow bounceInLeft project-card relative w-full h-[300px] bg-[#284bdf] rounded-lg overflow-hidden">
+        <div class="wow bounceInLeft project-card relative w-full h-[300px] bg-[#284bdf] rounded-lg overflow-hidden">
           <div class="project-card-img"></div>
           <div class="caption">responsive blog website </div>
-          <div class="details absolute w-full h-full bottom-0 z-[1000] text-white flex flex-col text-center items-center justify-center gap-5 p-5">
+          <div
+            class="details absolute w-full h-full bottom-0 z-[1000] text-white flex flex-col text-center items-center justify-center gap-5 p-5">
             <a href="#" class="main-btn self-center demo-link">demo</a>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quibusdam in blanditiis nam! Minus
               pariatur numquam maiores voluptate aliquam tempora veritatis aperiam ad excepturi tenetur, repudiandae
               neque odio repellat rem.</p>
           </div>
         </div>
-        <div
-          class="wow bounceInUp project-card relative w-full h-[300px] bg-[#284bdf] rounded-lg overflow-hidden">
+        <div class="wow bounceInUp project-card relative w-full h-[300px] bg-[#284bdf] rounded-lg overflow-hidden">
           <div class="project-card-img"></div>
           <div class="caption">responsive blog website </div>
-          <div class="details absolute w-full h-full bottom-0 z-[1000] text-white flex flex-col text-center items-center justify-center gap-5 p-5">
+          <div
+            class="details absolute w-full h-full bottom-0 z-[1000] text-white flex flex-col text-center items-center justify-center gap-5 p-5">
             <a href="#" class="main-btn self-center demo-link">demo</a>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quibusdam in blanditiis nam! Minus
               pariatur numquam maiores voluptate aliquam tempora veritatis aperiam ad excepturi tenetur, repudiandae
               neque odio repellat rem.</p>
           </div>
         </div>
-        <div
-          class="wow bounceInRight project-card relative w-full h-[300px] bg-[#284bdf] rounded-lg overflow-hidden">
+        <div class="wow bounceInRight project-card relative w-full h-[300px] bg-[#284bdf] rounded-lg overflow-hidden">
           <div class="project-card-img"></div>
           <div class="caption">responsive blog website </div>
-          <div class="details absolute w-full h-full bottom-0 z-[1000] text-white flex flex-col text-center items-center justify-center gap-5 p-5">
+          <div
+            class="details absolute w-full h-full bottom-0 z-[1000] text-white flex flex-col text-center items-center justify-center gap-5 p-5">
             <a href="#" class="main-btn self-center demo-link">demo</a>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quibusdam in blanditiis nam! Minus
               pariatur numquam maiores voluptate aliquam tempora veritatis aperiam ad excepturi tenetur, repudiandae
               neque odio repellat rem.</p>
           </div>
         </div>
-        <div
-          class="project-card relative w-full h-[300px] bg-[#284bdf] rounded-lg overflow-hidden">
+        <div class="project-card relative w-full h-[300px] bg-[#284bdf] rounded-lg overflow-hidden">
           <div class="project-card-img"></div>
           <div class="caption">responsive blog website </div>
-          <div class="details absolute w-full h-full bottom-0 z-[1000] text-white flex flex-col text-center items-center justify-center gap-5 p-5">
+          <div
+            class="details absolute w-full h-full bottom-0 z-[1000] text-white flex flex-col text-center items-center justify-center gap-5 p-5">
             <a href="#" class="main-btn self-center demo-link">demo</a>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quibusdam in blanditiis nam! Minus
               pariatur numquam maiores voluptate aliquam tempora veritatis aperiam ad excepturi tenetur, repudiandae
@@ -522,8 +527,11 @@
   </section>
   <!-- end projects section  -->
   <!-- Start contact us -->
-  <section class="wow slideInLeft flex items-center flex-col justify-center w-full h-fit text-white">
-    <h2 class="main-title relative w-fit mx-auto before:w-full before:h-1 before:absolute before:bg-white before:left-0 before:-bottom-4 mb-10 capitalize text-3xl text-center "><span class="text-blue-600">contact</span> us</h2>
+  <section id="contact-us" class="wow slideInLeft flex items-center flex-col justify-center w-full h-fit text-white">
+    <h2
+      class="main-title relative w-fit mx-auto before:w-full before:h-1 before:absolute before:bg-white before:left-0 before:-bottom-4 mb-10 capitalize text-3xl text-center ">
+      <span class="text-blue-600">contact</span> us
+    </h2>
     <div class="container h-full flex flex-col md:flex-row items-center justify-between gap-10 py-20">
       <div class="w-full form-box flex flex-col gap-7 bg-light-bg md:w-[400px] p-10 shadow-2xl rounded-2xl">
         <form action="" class="flex flex-col gap-5">
@@ -548,22 +556,22 @@
       <div class="img-holder w-1/3 flex flex-col gap-10">
         <img class="hidden md:block" src="images/contact-us.png" alt="" />
         <div class="flex gap-5 items-center w-full justify-center self-center md:w-fit pb-10 md:pb-0">
-          <a class="text-2xl" href="#"><img  src="/images/magia.png" alt=""></a>
-            <!-- Icons  -->
-            <div class="facebook">
+          <a class="text-2xl" href="#"><img src="/images/magia.png" alt=""></a>
+          <!-- Icons  -->
+          <div class="facebook">
             <a href="#" class="hover:text-blue-500 transition-all duration-300"><i
-            class="fa-brands fa-2xl fa-facebook"></i></a>
-            </div>
-          
-              <div class="whatsApp">
-              <a href="#" class="hover:text-blue-500 transition-all duration-300"><i
-              class="fa-brands fa-2xl fa-whatsapp"></i></a>
-              </div>
-          
-              <div class="linkedin">
-                <a href="#" class="hover:text-blue-500 transition-all duration-300"><i
+                class="fa-brands fa-2xl fa-facebook"></i></a>
+          </div>
+
+          <div class="whatsApp">
+            <a href="#" class="hover:text-blue-500 transition-all duration-300"><i
+                class="fa-brands fa-2xl fa-whatsapp"></i></a>
+          </div>
+
+          <div class="linkedin">
+            <a href="#" class="hover:text-blue-500 transition-all duration-300"><i
                 class="fa-brands fa-2xl fa-linkedin-in"></i></a>
-              </div>
+          </div>
         </div>
       </div>
     </div>
@@ -576,6 +584,11 @@
     </p>
   </footer>
   <!-- end footer -->
+
+
+
+
+
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <!-- Initialize Swiper -->
@@ -585,19 +598,24 @@
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+      autoplay: {
+        delay: 2000, // Time in milliseconds between slides
+        disableOnInteraction: false, // Autoplay will not stop when the user interacts with the slider
+      },
     });
     var swiper = new Swiper(".portfolioSwiper", {
       navigation: {},
+      autoplay: {
+        delay: 2000, // Time in milliseconds between slides
+        disableOnInteraction: false, // Autoplay will not stop when the user interacts with the slider
+      },
     });
   </script>
-
-
   <!-- Wow js (auto Animation) -->
   <script src="script.js"></script>
-
   <script src="wow.min.js"></script>
   <script>
-  new WOW().init();
+    new WOW().init();
   </script>
 
 </body>
